@@ -2,4 +2,137 @@
   padding: 0;
   mmargin: 0; }
 
+header {
+  position: absolute;
+  width: 100%; }
+
+.navbar-default {
+  background-image: none;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  z-index: 10; }
+  @media screen and (max-width: 760px) {
+    .navbar-default {
+      background-color: black; } }
+
+.navbar > .container .navbar-brand {
+  padding-top: 0; }
+
+.navbar-brand > img {
+  padding-top: 41px; }
+  @media screen and (max-width: 760px) {
+    .navbar-brand > img {
+      padding-top: 20px; } }
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+  padding-top: 43px;
+  color: white; }
+
+.navbar-default .navbar-nav > li > a:after {
+  display: block;
+  content: "";
+  width: 45%;
+  height: 2px;
+  background-color: transparent;
+  margin-top: 12px; }
+
+.navbar-default .navbar-nav > li > a:before {
+  display: block;
+  content: "";
+  width: 45%;
+  height: 2px;
+  background-color: transparent; }
+
+.navbar-default .navbar-nav > li:nth-last-child(2) > a:before {
+  position: relative;
+  top: 34px;
+  left: 28px; }
+
+.navbar-default .navbar-nav > li:nth-last-child(1) > a:before {
+  position: relative;
+  top: 34px;
+  left: 32px; }
+
+.navbar-default .navbar-nav > li:nth-last-child(3) > a:before {
+  position: relative;
+  top: 34px;
+  left: 49px; }
+
+.navbar-default .navbar-nav > li:nth-last-child(4) > a:before {
+  position: relative;
+  top: 34px;
+  left: 24px; }
+
+.navbar-default .navbar-nav > li:nth-last-child(5) > a:before {
+  position: relative;
+  top: 34px;
+  left: 35px; }
+
+.navbar-default .navbar-nav > li:nth-last-child(6) > a:before {
+  position: relative;
+  top: 34px;
+  left: 23px; }
+
+.navbar-default .navbar-nav > li > a:hover:after, .navbar-default .navbar-nav > li > a:hover:before {
+  display: block;
+  content: "";
+  width: 45%;
+  height: 2px;
+  background-color: #008ed6;
+  margin-top: 12px;
+  transition: 0.3s; }
+
+.navbar-default .navbar-nav > li > a:hover:before {
+  margin-top: 0; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white; }
+
+.navbar-default .navbar-nav > li > a:active:hover {
+  color: white; }
+
+.back {
+  background-image: url("../img/devices kopia.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 640px;
+  padding-top: 162px;
+  margin-bottom: 65px; }
+  .back h4 {
+    font-size: 14px;
+    color: #008ed6;
+    margin-bottom: 33px;
+    font-weight: bold; }
+  .back h1 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 36px; }
+  .back p {
+    font-size: 18px;
+    color: #999999;
+    line-height: 26px;
+    max-width: 520px;
+    margin-bottom: 67px; }
+  .back a {
+    font-size: 14px;
+    color: white;
+    background-color: #008ed6;
+    padding: 20px 28px;
+    margin-right: 20px;
+    border-radius: 5%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold; }
+
+.back a:nth-last-child(1) {
+  background: none;
+  border: solid 1px #454549;
+  padding: 19px 30px; }
+
 /*# sourceMappingURL=style.css.map */
