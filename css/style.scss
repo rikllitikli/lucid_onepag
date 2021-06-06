@@ -322,3 +322,250 @@ header{
     top: 114px;
   }
 }
+
+.owl_block{
+  background-image: url("../img/owl_back.jpg");
+  padding: 64px 0 214px;
+  background-size: cover;
+  h4{
+    @include h4;
+    margin-bottom: 20px;
+  }
+  h2{
+    @include h2;
+    color: white;
+    margin-bottom: 96px;
+  }
+  p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .image_user{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    color: #008ed6;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+      display: inline-block;
+      width: 60px;
+      position: relative;
+      right: 15px;
+    }
+  }
+}
+.coments{
+  display: flex;
+  align-items: center;
+}
+
+.owl_block .name p:nth-child(1){
+  font-size: 16px;
+  margin-bottom: 0;
+  line-height: 27px;
+}
+.owl_block .name p:nth-last-child(1){
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.owl_block h2:after, .owl_block h2:before{
+  content: "";
+  display: block;
+  max-width: 20px;
+  width: 100%;
+  height: 2px;
+  background-color: #008ed6;
+  position: relative;
+  left: 48%;
+  margin-top: 35px;
+  @include max-screen(767px){
+    left: 46%;
+  }
+  @include max-screen(382px){
+    left: 44%;
+  }
+}
+
+.owl_block h2:before{
+  position: relative;
+  top: 76px;
+  left: 50%;
+  @include max-screen(767px){
+    top: 76px;
+    left: 51%;
+  }
+}
+
+
+
+.owl-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -140px;
+  text-align: center;
+}
+
+
+.owl-dot span{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: none;
+  border-radius: 100%;
+  margin-right: 10px;
+  border: solid 1px #4f484a;
+}
+
+.owl-dot.active span {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 5px;
+  transition: 0.3s;
+  border: none;
+}
+
+.action {
+  background-color: #15141a;
+  padding: 70px 0;
+  margin-bottom: 30px;
+    h3{
+      font-size: 36px;
+      color: white;
+
+    }
+    a{
+      color: white;
+      background-color: #008ed6;
+      padding: 20px 27px;
+      border-radius: 5%;
+      margin-right: 20px;
+      display: inline-block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-size: 14px;
+
+    }
+  }
+
+.action a:nth-last-child(2){
+  padding: 19px 30px;
+  background: none;
+  border: solid 1px #444348;
+}
+
+
+.text_info{
+  h4{
+    @include h4;
+    margin-bottom: 22px;
+  }
+  h2{
+    @include h2;
+    margin-bottom: 70px;
+  }
+}
+
+.range ul{
+  list-style: none;
+  text-align: center;
+  border: solid 1px #ecf0f1;
+  max-width: 270px;
+  width: 100%;
+  margin-bottom: 60px;
+  @include max-screen(768px){
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
+
+.range div:nth-last-child(3), .range div:nth-last-child(2), .range div:nth-last-child(1), .range div:nth-last-child(4) {
+  h3{
+    font-size: 60px;
+    color: #1a1a1a;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    max-width: 270px;
+    width: 100%;
+    padding-top: 27px;
+    margin-bottom: 0;
+    margin-top: 0;
+    span{
+      font-size: 48px;
+      position: relative;
+      bottom: 17px;
+    }
+  }
+  h4{
+    font-size:24px;
+    color: #485460;
+    max-width: 270px;
+    width: 100%;
+    padding: 29px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+    padding: 20px 41px;
+    border: solid 1px #ecf0f1;
+    color: #008ed6;
+    border-radius: 5%;
+  }
+}
+
+.range li:nth-child(3){
+  color: #8c9299;
+  max-width: 270px;
+  width: 100%;
+  background-color: white;
+  padding: 19px 40px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.range li:nth-last-child(1){
+  padding: 29px 0;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  max-width: 368px;
+  width: 100%;
+}
+.range li:nth-last-child(3){
+  border: solid 1px #ecf0f1;
+  font-size: 18px;
+  color: #999999;
+  margin-bottom: 0;
+  padding-bottom: 38px;
+  max-width: 270px;
+  width: 100%;
+  line-height: 25px;
+
+}
+
+
+
+.range div ul:hover{
+  li:nth-last-child(3){
+    h3{
+      background-color: #008ed6;
+      transition: 0.3s;
+      color: white;
+    }
+    background-color: #008ed6;
+    transition: 0.3s;
+    color: white;
+  }
+  a {
+    background-color: #008ed6;
+    transition: 0.3s;
+    color: white;
+    border: none;
+  }
+}
