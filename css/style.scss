@@ -565,6 +565,9 @@ header{
   padding: 19px 40px;
   font-size: 14px;
   text-align: center;
+  span{
+    color: #008ed6;
+  }
   @include max-screen(768px){
     max-width: 320px;
     width: 100%;
